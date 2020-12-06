@@ -4,12 +4,12 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.view.LayoutInflater;
 
-public class ResetPassWordEmail {
+public class Reset {
 
     private Activity activity;
     private AlertDialog alertDialog;
 
-    ResetPassWordEmail(Activity myActivity){
+    Reset(Activity myActivity){
         activity = myActivity;
     }
 

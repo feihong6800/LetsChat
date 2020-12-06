@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -53,7 +52,7 @@ public class ForgetPassword extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
-                    final ResetPassWordEmail restPasswordEmail = new ResetPassWordEmail(ForgetPassword.this);
+                    final Reset restPasswordEmail = new Reset(ForgetPassword.this);
                     restPasswordEmail.startLodingDialog();
                     Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {

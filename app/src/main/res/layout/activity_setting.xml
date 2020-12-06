@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".Setting">
+
+
+    <include
+        android:id="@+id/settings_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:onClick="update"
+        android:background="@drawable/ic_account"
+        app:civ_border_color="@color/light_green"
+        app:civ_border_width="5dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePic"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/chatbox"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_account2"
+        android:gravity="center"
+        android:hint="YOUR NAME"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/chatbox"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_edit"
+        android:gravity="center"
+        android:hint="YOUR SIGNATURE"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/chatbox"
+        android:backgroundTint="@color/red"
+        android:text="UPDATE"
+        android:onClick="btnUpdate"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "830155795490",
+    "firebase_url": "https://letsc-c4832.firebaseio.com",
+    "project_id": "letsc-c4832",
+    "storage_bucket": "letsc-c4832.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830155795490:android:d112f3006bf25538762e7b",
+        "android_client_info": {
+          "package_name": "com.example.letschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830155795490-clr5mnpnv3vd2b4n3b6at0901immi6vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdVjihNckMDiS4iur2LlrNoCUkypOas4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830155795490-clr5mnpnv3vd2b4n3b6at0901immi6vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

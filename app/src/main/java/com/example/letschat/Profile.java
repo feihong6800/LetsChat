@@ -108,10 +108,10 @@ public class Profile extends AppCompatActivity {
 
                     if (request_type.equals("sent")) {
                         currentState = "request_sent";
-                        btn_Request.setText("Cancel Chat Request");
+                        btn_Request.setText("CANCEL REQUEST");
                     } else if (request_type.equals("received")) {
                         currentState = "request_received";
-                        btn_Request.setText("Accept Chat Request");
+                        btn_Request.setText("ACCEPT Request");
 
                         btn_Decline.setVisibility(View.VISIBLE);
                         btn_Decline.setEnabled(true);
@@ -183,7 +183,7 @@ public class Profile extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 btn_Request.setEnabled(true);
                                 currentState = "new";
-                                btn_Request.setText("Send Message");
+                                btn_Request.setText("SEND MESSASGE");
 
                                 btn_Decline.setVisibility(View.INVISIBLE);
                                 btn_Decline.setEnabled(false);
@@ -213,7 +213,7 @@ public class Profile extends AppCompatActivity {
                                                 public void onComplete(@NonNull Task<Void> task) {
                                                     btn_Request.setEnabled(true);
                                                     currentState = "friends";
-                                                    btn_Request.setText("Remove this Contact");
+                                                    btn_Request.setText("REMOVE THIS CONTACT");
 
                                                     btn_Decline.setVisibility(View.INVISIBLE);
                                                     btn_Decline.setEnabled(false);
@@ -241,7 +241,7 @@ public class Profile extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 btn_Request.setEnabled(true);
                                 currentState = "new";
-                                btn_Request.setText("Send Message");
+                                btn_Request.setText("SEND MESSAGE");
 
                                 btn_Decline.setVisibility(View.INVISIBLE);
                                 btn_Decline.setEnabled(false);
@@ -272,7 +272,7 @@ public class Profile extends AppCompatActivity {
                                         if (task.isSuccessful()) {
                                             btn_Request.setEnabled(true);
                                             currentState = "request_sent";
-                                            btn_Request.setText("Cancel Chat Request");
+                                            btn_Request.setText("CANCEL CHAT REQUEST");
                                         }
                                     }
                                 });
